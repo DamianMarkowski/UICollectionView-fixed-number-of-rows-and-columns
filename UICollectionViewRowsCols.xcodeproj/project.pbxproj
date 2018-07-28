@@ -16,6 +16,7 @@
 		17528E68210CDC0500468B88 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17528E66210CDC0500468B88 /* NumberCell.swift */; };
 		17528E69210CDC0500468B88 /* NumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17528E67210CDC0500468B88 /* NumberCell.xib */; };
 		176D4C34210D10C8005FABE4 /* StartViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D4C33210D10C8005FABE4 /* StartViewControllerSnapshotTests.swift */; };
+		176D4C37210D182A005FABE4 /* NumberCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D4C36210D182A005FABE4 /* NumberCellTests.swift */; };
 		81F5C9D267DE2AC447C94BD4 /* Pods_UICollectionViewRowsColsSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05633268ED1DD6943B6F684F /* Pods_UICollectionViewRowsColsSnapshotTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		176D4C27210D104A005FABE4 /* UICollectionViewRowsColsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewRowsColsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176D4C2B210D104A005FABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176D4C33210D10C8005FABE4 /* StartViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
+		176D4C36210D182A005FABE4 /* NumberCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCellTests.swift; sourceTree = "<group>"; };
 		252B53FA3C6CB2707249E0C5 /* Pods-UICollectionViewRowsColsSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewRowsColsSnapshotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewRowsColsSnapshotTests/Pods-UICollectionViewRowsColsSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
 		B47CF531E9555E3F6C007BC8 /* Pods-UICollectionViewRowsColsSnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewRowsColsSnapshotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionViewRowsColsSnapshotTests/Pods-UICollectionViewRowsColsSnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +165,7 @@
 		17528E62210CD35900468B88 /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				176D4C35210D1808005FABE4 /* ViewComponents */,
 				17528E63210CD37100468B88 /* StartViewControllerTests.swift */,
 			);
 			path = Start;
@@ -200,6 +203,14 @@
 				176D4C33210D10C8005FABE4 /* StartViewControllerSnapshotTests.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		176D4C35210D1808005FABE4 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				176D4C36210D182A005FABE4 /* NumberCellTests.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		CB5BA0FE423EFB5EA32E6DE7 /* Pods */ = {
@@ -404,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176D4C37210D182A005FABE4 /* NumberCellTests.swift in Sources */,
 				17528E64210CD37100468B88 /* StartViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
