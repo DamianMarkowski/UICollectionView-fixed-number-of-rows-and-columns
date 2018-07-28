@@ -11,13 +11,13 @@ import iOSSnapshotTestCase
 @testable import UICollectionViewRowsColsTests
 
 class StartViewControllerSnapshotTests: iOSSnapshotTestCase {
-    
+
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
-    
+
 }
