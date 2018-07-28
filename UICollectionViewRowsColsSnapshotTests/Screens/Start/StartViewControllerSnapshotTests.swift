@@ -7,17 +7,34 @@
 //
 
 import XCTest
-import iOSSnapshotTestCase
-@testable import UICollectionViewRowsColsTests
+import FBSnapshotTestCase
+@testable import UICollectionViewRowsCols
 
-class StartViewControllerSnapshotTests: iOSSnapshotTestCase {
+class StartViewControllerSnapshotTests: FBSnapshotTestCase {
+
+    var sut: StartViewController!
 
     override func setUp() {
         super.setUp()
+        setUpViewController()
+        recordMode = false
     }
 
     override func tearDown() {
         super.tearDown()
+        sut = nil
+    }
+
+    private func setUpViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let screen = storyboard.instantiateViewController(withIdentifier: "StartViewController") as? StartViewController
+        guard let viewController = screen else { return }
+        sut = viewController
+        sut.loadViewIfNeeded()
+    }
+
+    func test_viewDidLoad_shouldDisplayScreenCorrectly() {
+        FBSnapshotVerifyView(sut.view)
     }
 
 }
